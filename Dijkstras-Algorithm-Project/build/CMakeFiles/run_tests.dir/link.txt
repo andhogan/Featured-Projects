@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++11 -Wall -g  -rdynamic CMakeFiles/run_tests.dir/tests/test_Empty.cpp.o CMakeFiles/run_tests.dir/code/Edge.cpp.o CMakeFiles/run_tests.dir/code/Empty.cpp.o CMakeFiles/run_tests.dir/code/Graph.cpp.o CMakeFiles/run_tests.dir/code/Node.cpp.o  -o run_tests  -lgtest_main -Wl,-Bstatic -lgtest -Wl,-Bdynamic -lpthread 

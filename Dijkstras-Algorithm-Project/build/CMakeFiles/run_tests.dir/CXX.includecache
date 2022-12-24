@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/jovyan/2270 - Data Structures/final-project-andhogan/code/Edge.h
+memory
+-
+Node.h
+/home/jovyan/2270 - Data Structures/final-project-andhogan/code/Node.h
+
+/home/jovyan/2270 - Data Structures/final-project-andhogan/code/Graph.cpp
+Graph.h
+/home/jovyan/2270 - Data Structures/final-project-andhogan/code/Graph.h
+iostream
+-
+sstream
+-
+
+/home/jovyan/2270 - Data Structures/final-project-andhogan/code/Graph.h
+vector
+-
+set
+-
+string
+-
+memory
+-
+queue
+-
+Edge.h
+/home/jovyan/2270 - Data Structures/final-project-andhogan/code/Edge.h
+Node.h
+/home/jovyan/2270 - Data Structures/final-project-andhogan/code/Node.h
+
+/home/jovyan/2270 - Data Structures/final-project-andhogan/code/Node.h
+iostream
+-
+memory
+-
+cmath
+-
+
