@@ -43,19 +43,19 @@ def solution(N):
     return true_result
 
     
-print(f"solution(16) = {solution(16)}. It is {'correct' if solution(16) == 79 else 'wrong' }.")
-print(f"solution(19) = {solution(19)}. It is {'correct' if solution(19) == 199 else 'wrong' }.")
-print(f"solution(7) = {solution(7)}. It is {'correct' if solution(7) == 7 else 'wrong' }.")
+# print(f"solution(16) = {solution(16)}. It is {'correct' if solution(16) == 79 else 'wrong' }.")
+# print(f"solution(19) = {solution(19)}. It is {'correct' if solution(19) == 199 else 'wrong' }.")
+# print(f"solution(7) = {solution(7)}. It is {'correct' if solution(7) == 7 else 'wrong' }.")
 
-#My test cases
-print(f"solution(20) = {solution(20)}. It is {'correct' if solution(20) == 299 else 'wrong' }.")
-print(solution(21)) 
-print(solution(22)) 
-print(solution(23)) 
-print(solution(24)) 
-print(solution(25)) 
-print(solution(26)) 
-print(solution(27)) 
-print(solution(28))
+# #My test cases
+# print(f"solution(20) = {solution(20)}. It is {'correct' if solution(20) == 299 else 'wrong' }.")
+# print(solution(21)) 
+# print(solution(22)) 
+# print(solution(23)) 
+# print(solution(24)) 
+# print(solution(25)) 
+# print(solution(26)) 
+# print(solution(27)) 
+# print(solution(28))
 
 

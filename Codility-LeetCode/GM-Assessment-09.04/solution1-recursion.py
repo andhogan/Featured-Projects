@@ -22,15 +22,18 @@ def solution(N):
     if N <= 9:
         return N
 
-    # recursively add digits to the result all while subtracting from N
-    result = solution(N-9) * 10 + 9
+    # Initialize max digit (for readability and illustration), starting with the largest possible single digit: 9 to optimally subtract from N iteratively.
+    max_digit = 9
+
+    # recursively add digits to the result all while subtracting the max digit from N
+    result = solution(N-max_digit) * 10 + max_digit     # solution(N-9) * 10 + 9
 
     return result
 
 # My test cases
 
-for i in range (0, 51):
-    print(solution(i))
+# for i in range (0, 51):
+#     print(solution(i))
 
 # print(solution(16))  # Should return 79
 # print(solution(19))  # Should return 199
