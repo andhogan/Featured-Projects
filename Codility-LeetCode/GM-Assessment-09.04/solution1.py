@@ -14,28 +14,30 @@
 # N is an interger within the range [0..50].
 
 def solution(N):
-    # Handle the special case when N is one digit.
-    if N <= 9:
-        return N
-    
     # Handle the case when N is a negative number (although given the range, this spec is optional)
     if N < 0:
         return 0
+    
+    # Handle the case when N is one digit.
+    if N <= 9:
+        return N
 
-    # Initialize variables to store the result and the current digit.
+    # Initialize variables to store the result to be modified later and the current digit.
     mod_result = 0
-    current_digit = 9  # We start with the largest possible digit.
+    current_digit = 9  # Start with the largest possible single digit to optimally subtract from N iteratively.
 
-    # While N is greater than 0, keep adding digits to the result.
+    # While N is greater than 0, keep adding the current digit to the result.
     while N > 0:
         # Calculate the maximum digit to add to the result without exceeding N.
-        while current_digit > N:
-            current_digit -= 1
-        max_digit = min(current_digit, N)
-        mod_result = mod_result * 10 + max_digit
-        N -= max_digit
+        if N <= 9:
+            current_digit = N
 
-    true_result = int(str(mod_result)[::-1])
+        mod_result = mod_result * 10 + current_digit # shifts previous digits forward to place a single digit in the ones place.
+        N -= current_digit
+
+    # reverse the string of digits to achieve the lowest possible integer
+    # Ex: solution(16): Digits of 97 and 79 both add up to 16, but we want to accept the smaller value.
+    true_result = int(str(mod_result)[::-1]) # reverse slice
     
 
     return true_result
